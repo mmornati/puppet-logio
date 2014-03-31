@@ -1,0 +1,13 @@
+exports.config = {
+nodeName: "<%= fqdn %>",
+  logStreams: {
+    system: [
+      "/var/log/messages",
+      "/var/log/secure"
+    ],
+  },
+  server: {
+    host: '<%= logio_server %>',
+    port: 28777
+  }
+}
